@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use | AddMeBuddy</title>
+  <meta name="description" content="Terms of Use for AddMeBuddy">
+  
+  <!-- SEO & Theme Setup -->
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // FOUC (Flash of Unstyled Content) Prevention Script for System Color Theme
+    {
+      const colorScheme = localStorage.getItem("color-scheme");
+      if (colorScheme) {
+        document.querySelector('meta[name="color-scheme"]').content = colorScheme;
+      }
+    }
+  </script>
+
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .legal-section {
+      padding: 140px 24px 80px;
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+    }
+    .background-orb-wrapper {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.25;
+    }
+    .background-orb-wrapper .hero-3d-slot {
+      width: 100vmin;
+      max-width: 1200px;
+      aspect-ratio: 1;
+    }
+    
+    .legal-header {
+      max-width: 800px;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .legal-title {
+      font-size: clamp(40px, 6vw, 64px);
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+    .legal-subtitle {
+      font-size: 18px;
+      color: var(--color-text-muted);
+      margin-bottom: 12px;
+    }
+    .legal-welcome {
+      font-size: 20px;
+      color: var(--color-text);
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .legal-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    
+    .legal-card {
+      background: var(--color-bg-surface);
+      backdrop-filter: blur(25px) saturate(180%);
+      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius-lg);
+      padding: 40px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+      transition: var(--transition-smooth);
+    }
+    .legal-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--color-border-hover);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+    }
+    
+    .legal-card.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .legal-card h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: var(--color-primary);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    .legal-card h2 span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      background: var(--color-primary-glow);
+      border-radius: 50%;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .legal-card p {
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .legal-card ul {
+      margin-bottom: 16px;
+      padding-left: 20px;
+      color: var(--color-text-muted);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    .legal-card li {
+      margin-bottom: 8px;
+    }
+    .legal-card a:not(.btn) {
+      color: var(--color-primary);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .legal-card a:not(.btn):hover {
+      color: var(--color-primary-gradient-end);
+    }
+    
+    @media (max-width: 768px) {
+      .legal-grid {
+        grid-template-columns: 1fr;
+      }
+      .legal-card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header id="main-header" class="main-header">
+    <nav class="nav-container">
+      <a href="#" class="logo-link" id="logo-link" aria-label="AddMeBuddy Home">
+        <img src="assets/logo.png" alt="AddMeBuddy Study Abroad Logo" class="logo-img">
+      </a>
+
+      <div class="nav-actions" style="margin-left: auto;">
+        <!-- Theme Toggle Switch -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Background Rotating Sphere -->
+  <div class="background-orb-wrapper">
+    <div id="hero-3d-slot" class="hero-3d-slot">
+      <canvas id="hero-canvas"></canvas>
+      <div class="slot-glow" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main>
+    <section class="legal-section">
+      
+      <div class="legal-header">
+        <h1 class="legal-title gradient-text">Terms of Use</h1>
+        <p class="legal-subtitle">Effective Date: June 01, 2026</p>
+        <p class="legal-welcome">Welcome to AddMeBuddy — your friendly companion for making study abroad dreams a reality!</p>
+        <p style="color: var(--color-text-muted); margin-top: 16px;">By accessing or using our website, services, tools, or community features, you agree to be bound by these Terms of Use. If you do not agree with any part of these terms, please do not use our platform.</p>
+      </div>
+
+      <div class="legal-grid">
+        
+        <!-- Card 1 -->
+        <div class="legal-card">
+          <h2><span>1</span> About AddMeBuddy</h2>
+          <p>AddMeBuddy is a premium study abroad support platform designed by students, for students. We simplify your journey from dream to destination by offering personalized counseling, university matching, peer connections, document assistance, visa guidance, and a supportive community of fellow aspirants and mentors.</p>
+          <p>Our goal is to make the complex process of studying abroad feel exciting, achievable, and less lonely.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="legal-card">
+          <h2><span>2</span> Our Services</h2>
+          <p>We provide the following (subject to availability and your chosen plan):</p>
+          <ul>
+            <li>Academic profile assessment and course/country recommendations</li>
+            <li>Peer matching and community chat features</li>
+            <li>University application support and fast-track portals</li>
+            <li>SOP, Resume, and document polishing assistance</li>
+            <li>Visa preparation resources and mock interviews</li>
+            <li>Test preparation guidance (IELTS, TOEFL, etc.)</li>
+            <li>Pre-departure and landing support</li>
+          </ul>
+          <p>All services are provided on a best-effort basis and are not guaranteed to result in admission or visa approval.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="legal-card">
+          <h2><span>3</span> User Eligibility & Accounts</h2>
+          <p>You must be at least 16 years old (or the age of majority in your country) to use our services. By using AddMeBuddy, you represent that you are eligible and have the legal capacity to enter into this agreement. Students under 18 may need parental/guardian consent depending on local laws.</p>
+          <p>You are responsible for maintaining the confidentiality of your account credentials and must provide accurate information during registration. Notify us immediately of any unauthorized use.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="legal-card">
+          <h2><span>4</span> Acceptable Use & Guidelines</h2>
+          <p>AddMeBuddy is a positive, supportive space for students. You agree not to:</p>
+          <ul>
+            <li>Share false or misleading information</li>
+            <li>Harass, bully, or discriminate against other users</li>
+            <li>Post inappropriate, offensive, or illegal content</li>
+            <li>Attempt to spam, scrape, or misuse our matching algorithms</li>
+            <li>Misrepresent your academic profile or achievements</li>
+            <li>Use the platform for any commercial purpose other than your own study abroad journey</li>
+          </ul>
+          <p>We expect everyone to treat fellow buddies with respect and kindness.</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="legal-card">
+          <h2><span>5</span> Intellectual Property & Payments</h2>
+          <p>All content on AddMeBuddy — including text, designs, algorithms, tools, templates, and branding — is owned by or licensed to AddMeBuddy. You retain ownership of uploaded documents, but grant us a limited license to use them as necessary.</p>
+          <p>All fees are clearly mentioned before purchase. Some services may be non-refundable (especially after delivery, such as SOP reviews). We reserve the right to modify pricing with reasonable notice.</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="legal-card">
+          <h2><span>6</span> Disclaimers & Liability</h2>
+          <p>Study abroad outcomes depend on many factors beyond our control. We do not guarantee admission offers, visa approvals, or specific results. While we strive for accuracy, education policies change frequently. Always cross-verify critical information.</p>
+          <p>To the maximum extent permitted by law, AddMeBuddy shall not be liable for any indirect, incidental, or consequential damages. Our total liability shall not exceed the amount you paid to us in the last 12 months.</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="legal-card full-width">
+          <h2><span>7</span> General Provisions & Contact</h2>
+          <p><strong>Termination:</strong> We may suspend or terminate your access if you violate these terms. You may stop using our services at any time.</p>
+          <p><strong>Privacy:</strong> Please read our Privacy Policy to understand how we protect your information.</p>
+          <p><strong>Changes & Governing Law:</strong> We may update these Terms occasionally. Continued use constitutes acceptance. These Terms shall be governed by the laws of India.</p>
+          <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--color-border);">
+            <p style="color: var(--color-text); font-weight: 500; margin-bottom: 16px;">If you have any questions, feel free to reach out:</p>
+            <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+              <a href="mailto:addmebuddy2@gmail.com" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Email Us
+              </a>
+              <a href="https://shloook.github.io/AddMeBuddy/" class="btn btn-secondary">Visit Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin-top: 60px; color: var(--color-text-muted);">
+        <p style="font-size: 18px; color: var(--color-text); font-weight: 500; margin-bottom: 8px;">Study Abroad, Simplified — Together. 🌍</p>
+        <p>Thank you for choosing AddMeBuddy as your study abroad companion!</p>
+        <p style="font-size: 14px; margin-top: 20px;">Last updated: June 01, 2026</p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo-link">
+          <img src="assets/logo.png" alt="AddMeBuddy Study Abroad Logo" class="logo-img footer-logo-img">
+        </a>
+        <p class="footer-desc">Redefining study abroad prep as a premium collaborative journey. Never travel alone.</p>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 AddMeBuddy. All rights reserved. Made for Global Achievers.</p>
+      <p class="footer-credit">Made with <svg class="heart-icon" viewBox="0 0 24 24" width="16" height="16"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#ff4d4d"/></svg> by AddMeBuddy.</p>
+      <div class="footer-status-pill">
+        <span class="status-dot"></span> System Theme Sync Active
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js"></script>
+</body>
+</html>
